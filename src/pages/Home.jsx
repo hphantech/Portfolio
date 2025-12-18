@@ -17,6 +17,7 @@ export const Home = () => {
         <Navbar/>
 
         {/*MainContent*/}
+        <Main></Main>
 
         {/*Footer*/}
 
