@@ -4,14 +4,14 @@ import { Github } from "lucide-react"
 const projects = [
     {
         id: 1,
-        title: "Project 1",
-        description: "something",
+        title: "Portfolio Website",
+        description: "I made this Portfolio website to share my experience and skills",
         image: "/projects/project1.png",
         tags: ["React", "TailwindCSS"],
 
         // put the links of your projects here
-        demoUrl: "#",
-        githubUrl: ""
+        demoUrl: "https://portfolio-delta-one-26.vercel.app/",
+        githubUrl: "https://github.com/hphantech/Portfolio"
     },
     {
         id: 2,
@@ -61,7 +61,7 @@ export const ProjectsSection = () => {
                             </div>
                         
                         <h3 className="text-xl font-semibold mb-1 ">{project.title}</h3>
-                        <p>{project.description}</p>
+                        <p className="text-sm py-3">{project.description}</p>
                         <div className="flex justify-between items-center">
                             <div className="flex space-x-3">
                                 <a href={project.demoUrl}
