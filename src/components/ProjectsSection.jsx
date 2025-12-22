@@ -1,5 +1,5 @@
 import { Description } from "@radix-ui/react-toast"
-import { ExternalLink } from "lucide-react"
+import { ArrowRight, ExternalLink } from "lucide-react"
 import { Github } from "lucide-react"
 const projects = [
     {
@@ -83,6 +83,14 @@ export const ProjectsSection = () => {
                         </div>
                     </div>
                 ))}
+
+            </div>
+            <div className="text-center mt-12">
+                <a className="cosmic-button w-fit flex items-center mx-auto gap-2" 
+                target="_blank"
+                href="https://github.com/hphantech">
+                    Check my GitHub <ArrowRight size={16} />
+                </a>
 
             </div>
         </div>
