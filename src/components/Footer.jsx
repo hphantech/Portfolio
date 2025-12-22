@@ -3,7 +3,7 @@ import { ArrowUp, Linkedin, Mail, MapPin } from "lucide-react";
 export const Footer = () => {
   return (
     <footer className="mt-12 border-t border-border bg-card">
-      <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div className="container mx-auto px-4 py-5 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         
         {/* LEFT — Info */}
         <div className="space-y-6">
