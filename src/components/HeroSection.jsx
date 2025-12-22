@@ -5,15 +5,17 @@ export const HeroSection = () => {
         <div className="container max-w-4xl mx-auto text-center z-10">
             <div className="space-y-6">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                    <span className="opacity-0 animate-fade-in"> Hi,</span>
-                    <span className="opacity-0 animate-fade-in-delay-1"> My name is</span>
+                    <span className="opacity-0 animate-fade-in"> Hi, </span>
+                    <span className="opacity-0 animate-fade-in-delay-1">  my name is</span>
                     <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-2"> Hieu</span>
                     <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> Phan</span>
                     <span></span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    Third-year IT student focused on software engineering, with the goal of becoming a full-stack developer. 
+                    I am a Third-year IT student focused on software engineering, with the goal of becoming a full-stack developer. 
                     I built this website as a space to share my skills, projects, and experience and to give a clear picture of who I am and how I work.
+                    This portfolio will also reflect on my work and will be updated as I gain more experience. 
+                    Feel free to look around :)
                 </p>
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                     <a href="#projects" className="cosmic-button">
@@ -23,11 +25,14 @@ export const HeroSection = () => {
                 </div>
             </div>
         </div>
+
+        {/* optional animated scroll */}
+        {/* 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-primary"/>
-
-
-        </div>
+        </div> 
+        */}
+        
     </section>
 }
