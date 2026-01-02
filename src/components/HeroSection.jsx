@@ -18,13 +18,11 @@ export const HeroSection = () => {
                 </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    I am currently looking for a Software Engineering internship from Feb 2 to Jun 26, 2026. 
+                    I am currently looking for a Software Engineering internship. 
                     If you think I could be a good fit for your team, feel free to reach out.
 </p>
                 <div className="opacity-0 animate-fade-in-delay-3 flex flex-col items-center gap-2">
-            <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm md:text-base text-muted-foreground">
-              Available for internship: <span className="ml-2 text-foreground/90">Feb 2 – Jun 26, 2026</span>
-            </span>
+            
 
             <a
               href="mailto:hphan7904@gmail.com"

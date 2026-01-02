@@ -46,6 +46,7 @@ export const AboutSection = () => {
 
             <p className="text-muted-foreground">
              I’m currently looking for a software engineering or frontend-focused internship from <span className="font-bold">February to June 2026</span>. This internship is part of my HBO-ICT Software Engineering program.
+             Internship duration should be 21 weeks and ~32 hours per week
              
               If you think I could be a fit, reach out.
             </p>
