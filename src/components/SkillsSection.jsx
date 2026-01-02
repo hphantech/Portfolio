@@ -1,23 +1,30 @@
 import { useState } from "react"
 import { cn } from "../lib/utils";
 const skills = [
-    // Frontend
-  { name: "HTML/CSS", level: 90, category: "frontend" },
-  { name: "JavaScript", level: 75, category: "frontend" },
-  { name: "React", level: 80, category: "frontend" },
-  { name: "TypeScript", level: 65, category: "frontend" },
-  { name: "Tailwind CSS", level: 70, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  // Frontend
+  { name: "HTML/CSS", level: 70, category: "frontend" },
+  { name: "JavaScript", level: 65, category: "frontend" },
+  { name: "React", level: 65, category: "frontend" },
+  { name: "TypeScript", level: 45, category: "frontend" },
+  { name: "Tailwind CSS", level: 60, category: "frontend" },
+  { name: "Next.js", level: 55, category: "frontend" },
+  { name: "React Native", level: 55, category: "frontend" },
 
-  // Backend
-  { name: "Node.js", level: 70, category: "backend" },
-  { name: "MongoDB", level: 60, category: "backend" },
+  // Backend (basic)
+  { name: "Node.js", level: 50, category: "backend" },
+  { name: "REST APIs", level: 55, category: "backend" },
+  { name: "MongoDB", level: 45, category: "backend" },
+  { name: "Authentication (basic)", level: 45, category: "backend" },
 
-  // Tools
-  { name: "Git/GitHub", level: 75, category: "tools" },
-  { name: "Figma", level: 60, category: "tools" },
-  { name: "VS Code", level: 85, category: "tools" },
-]
+  // Tools & workflow
+  { name: "Git/GitHub", level: 65, category: "tools" },
+  { name: "Postman", level: 50, category: "tools" },
+  { name: "Figma", level: 50, category: "tools" },
+
+  // Extra (real, differentiating experience)
+  { name: "Luau (Roblox)", level: 55, category: "tools" },
+];
+
 
 const categories = ["all", "frontend", "backend", "tools"];
 

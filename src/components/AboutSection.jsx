@@ -1,20 +1,21 @@
 import { Briefcase, Code, User } from "lucide-react";
 
+
 const highlights = [
   {
     icon: Code,
     title: "Frontend Development",
-    description: "Modern UI, responsive layouts, and clean component structure.",
+    description: "Building websites and applications using HTML, CSS, JavaScript, and modern frameworks through school and project work.",
   },
   {
     icon: User,
-    title: "Design & UX Focus",
-    description: "Strong attention to hierarchy, spacing, and interaction details.",
+    title: "Team-Based Development",
+    description: "Experience working in development teams during software engineering projects, including planning, implementation, and feedback cycles.",
   },
   {
     icon: Briefcase,
     title: "Internship Ready",
-    description: "Looking for a Software Engineering internship (Feb–Jun).",
+    description: "Available for a software engineering or frontend-focused internship (Feb–Jun 2026).",
   },
 ];
 
@@ -29,21 +30,30 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* LEFT */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">IT student & aspiring software engineer</h3>
+            <h3 className="text-2xl font-semibold">IT student who enjoys building web applications</h3>
 
             <p className="text-muted-foreground">
-              I build clean, modern interfaces with a strong focus on structure, consistency,
-              and user experience. I enjoy turning ideas into polished, scalable components.
+              I’m a third-year HBO-ICT student studying software engineering, with a strong interest in building websites and interactive applications. 
+              I enjoy working on projects where I can turn ideas into something visual and functional, 
+              whether that’s a web interface, a mobile app, or an interactive experience. Through my studies, 
+              I’ve worked on multiple software engineering “comaker” projects with external organizations. 
+              This includes building a mobile application for SquareAim and developing an interactive learning platform on 
+              Roblox for a primary school (Digitalis). These projects gave me hands-on experience working in teams, communicating with stakeholders, 
+              and iterating based on feedback.
             </p>
 
+            
+
             <p className="text-muted-foreground">
-              I’m currently looking for a Software Engineering internship from <span className="font-medium">February to June</span>.
+             I’m currently looking for a software engineering or frontend-focused internship from <span className="font-bold">February to June 2026</span>. This internship is part of my HBO-ICT Software Engineering program.
+             
               If you think I could be a fit, reach out.
             </p>
+            
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
 
-              {/* TODO: replace href with your real file link */}
+              
               <a
                 target="_blank"
                 href="/CV.pdf"
@@ -66,13 +76,18 @@ export const AboutSection = () => {
                   <div className="text-left">
                     <h4 className="font-semibold text-lg">{title}</h4>
                     <p className="text-muted-foreground">{description}</p>
+                    
                   </div>
+                  
                 </div>
               </div>
+              
             ))}
+            
           </div>
         </div>
       </div>
+      
     </section>
   );
 };
