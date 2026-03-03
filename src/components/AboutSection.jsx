@@ -8,14 +8,14 @@ const highlights = [
     description: "Building websites and applications using HTML, CSS, JavaScript, and modern frameworks through school and project work.",
   },
   {
-    icon: User,
-    title: "Team-Based Development",
-    description: "Experience working in development teams during software engineering projects, including planning, implementation, and feedback cycles.",
+  icon: User,
+  title: "Team-Based Development",
+  description: "Experience working in development teams during software engineering projects, including planning, implementation, and feedback cycles.",
   },
   {
-    icon: Briefcase,
-    title: "Internship Ready",
-    description: "Available for a software engineering or frontend-focused internship (Feb–Jun 2026).",
+  icon: Briefcase,
+  title: "Professional Experience",
+  description: "Gaining real-world software development experience through collaborations with companies and organizations.",
   },
 ];
 
@@ -44,12 +44,7 @@ export const AboutSection = () => {
 
             
 
-            <p className="text-muted-foreground">
-             I’m currently looking for a software engineering or frontend-focused internship from <span className="font-bold">February to June 2026</span>. This internship is part of my HBO-ICT Software Engineering program.
-             Internship duration should be 21 weeks and ~32 hours per week
-             
-              If you think I could be a fit, reach out.
-            </p>
+            
             
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">

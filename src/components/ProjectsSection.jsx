@@ -43,6 +43,17 @@ const projects = [
     githubUrl: "",
     status: "School project (not public)",
   },
+  {
+    id: 5,
+    title: "Cyberaventura — Educational App (In Development)",
+    description:
+      "A currently developing educational app for Cyberaventura that focuses on interactive learning experiences. The project is being built as part of a professional collaboration and is still in active development.",
+    image: "/projects/project5.png",
+    tags: ["React", "TypeScript", "Frontend Development", "Team Project"],
+    demoUrl: "https://cyberaventura.com",
+    githubUrl: "",
+    status: "In development (code confidential)",
+  },
 ];
 
 export const ProjectsSection = () => {

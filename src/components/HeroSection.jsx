@@ -12,20 +12,14 @@ export const HeroSection = () => {
                     <span></span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mx-auto opacity-0 animate-fade-in-delay-3">
-                    I am a Third-year IT student studying software engineering, My goal is to grow into a full-stack developer, but I want to build a strong frontend foundation first. 
+                    I am a third-year IT student studying software engineering. My goal is to grow into a full-stack developer, but I want to build a strong frontend foundation first. 
                     I built this website as a space to share my skills, projects and experience.
- 
                 </p>
-
-                <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    I am currently looking for a Software Engineering internship. 
-                    If you think I could be a good fit for your team, feel free to reach out.
-</p>
                 <div className="opacity-0 animate-fade-in-delay-3 flex flex-col items-center gap-2">
             
 
             <a
-              href="mailto:hphan7904@gmail.com"
+              href="mailto:hphan.tech@gmail.com"
               className="text-sm md:text-base text-muted-foreground hover:underline transition"
             >
               hphan.tech@gmail.com

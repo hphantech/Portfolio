@@ -12,8 +12,7 @@ export const ContactSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            I am currently looking for a internship. if you are interested. please feel free to contact me. 
-
+            Whether you want to talk about a project, collaboration, or opportunity, feel free to reach out. 
         </p>
 
         <div className="grid grid-cols1 md:grid-cols-2 gap-12">
