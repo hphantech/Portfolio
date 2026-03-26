@@ -5,27 +5,17 @@ const projects = [
     id: 1,
     title: "Personal Portfolio Website",
     description:
-      "A modern developer portfolio built with React and TailwindCSS, designed to showcase projects through clean UI, structured components, and responsive layouts.",
+      "Modern developer portfolio built with React and Tailwind CSS, focused on clean UI, smooth interactions, and performance. Designed to showcase real-world projects and development skills.",
     image: "/projects/project1.png",
     tags: ["React", "TailwindCSS"],
     demoUrl: "https://portfolio-delta-one-26.vercel.app/",
     githubUrl: "https://github.com/hphantech/Portfolio",
   },
   {
-    id: 2,
-    title: "Movie Discovery",
-    description:
-      "A movie discovery platform built with React, TailwindCSS, and Appwrite, integrating the TMDB API to enable real-time search, trending content, and dynamic data rendering.",
-    image: "/projects/project2.png",
-    tags: ["React", "TailwindCSS", "Appwrite", "REST API"],
-    demoUrl: "https://movies-react-git-main-hyus-projects-e2b7496f.vercel.app/",
-    githubUrl: "https://github.com/hphantech/Movies-react",
-  },
-  {
     id: 3,
-    title: "SquareAim — Football Planner App",
+    title: "SquareAim",
     description:
-      "A team-built mobile app for organizing football matches, developed during a software engineering comaker project. Focused on structured delivery, API integration, and real-world collaboration.",
+      "Fullstack mobile app for organizing football training sessions and matches. Built with a focus on scalability, real-time updates, and user-friendly mobile UX within a team development environment.",
     image: "/projects/project3.png",
     tags: ["React Native", "JavaScript", "REST APIs", "Team Project"],
     demoUrl: "",
@@ -34,9 +24,9 @@ const projects = [
   },
   {
     id: 4,
-    title: "Digitalis — Interactive Learning Platform (Roblox)",
+    title: "Digitalis (Roblox)",
     description:
-      "An interactive learning experience built on Roblox for a primary school, developed in a team with iterative testing and feedback. Implemented game logic, input handling, and event-driven systems.",
+      "Interactive learning platform developed in Roblox for primary school students. Focused on engagement, game logic, and educational experience, built through collaboration with stakeholders and user testing.",
     image: "/projects/project4.png",
     tags: ["Luau", "Roblox Studio", "Game Logic", "Team Project"],
     demoUrl: "https://www.youtube.com/watch?v=aSYQ-Vw5K7o",
@@ -45,16 +35,63 @@ const projects = [
   },
   {
     id: 5,
-    title: "Cyberaventura — Educational App (In Development)",
+    title: "Cyberaventura",
     description:
-      "A currently developing educational app for Cyberaventura that focuses on interactive learning experiences. The project is being built as part of a professional collaboration and is still in active development.",
+      "Gamified cybersecurity education platform in development, focused on interactive missions, user engagement, and scalable architecture. Contributing to both frontend development and product experience.",
     image: "/projects/project5.png",
-    tags: ["React", "TypeScript", "Frontend Development", "Team Project"],
+    tags: ["React Native", "TypeScript", "Supabase", "Mobile App", "Team Project"],
     demoUrl: "https://cyberaventura.com",
     githubUrl: "",
     status: "In development (code confidential)",
   },
+  {
+    id: 6,
+    title: "Underground Webshop Template",
+    description:
+      "Minimal aesthetic webshop built for an underground clothing brand, featuring smooth GSAP animations, interactive UI, and a seamless shopping experience. Users can explore products, interact with dynamic visuals, and add items to their cart within a visually immersive interface.",
+    image: "/projects/project6.png",
+    tags: ["Next.js 16", "TypeScript", "GSAP", "E-commerce", "UI/UX", "Responsive Design"],
+    demoUrl: "https://soirn-studio.vercel.app/landing",
+    githubUrl: "https://github.com/hphantech/soirn-studio",
+  },
 ];
+
+const tagIcons = {
+  React: "https://cdn.simpleicons.org/react/61DAFB",
+  NextJS: "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
+  "Next.js": "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
+  "Next.js 16": "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
+  TypeScript: "https://cdn.simpleicons.org/typescript/3178C6",
+  JavaScript: "https://cdn.simpleicons.org/javascript/F7DF1E",
+  TailwindCSS: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+  "Tailwind CSS": "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+  Appwrite: "https://cdn.simpleicons.org/appwrite/FD366E",
+  Supabase: "https://cdn.simpleicons.org/supabase/3ECF8E",
+  "REST API": "https://cdn.simpleicons.org/openapiinitiative/6BA539",
+  "REST APIs": "https://cdn.simpleicons.org/openapiinitiative/6BA539",
+  "React Native": "https://cdn.simpleicons.org/react/61DAFB",
+  Luau: "https://cdn.simpleicons.org/lua/2C2D72",
+  "Roblox Studio": "https://cdn.simpleicons.org/roblox/FFFFFF",
+  "UI/UX": "https://cdn.simpleicons.org/figma/F24E1E",
+  "Landing Page": "https://cdn.simpleicons.org/html5/E34F26",
+  "Responsive Design": "https://cdn.simpleicons.org/css/1572B6",
+  GSAP: "https://cdn.simpleicons.org/greensock/88CE02",
+  "E-commerce": "https://cdn.simpleicons.org/shopify/95BF47",
+  "Mobile App": "https://cdn.simpleicons.org/android/3DDC84",
+  "Frontend Development": "https://cdn.simpleicons.org/webflow/FFFFFF",
+  "Game Logic": "https://cdn.simpleicons.org/unity/FFFFFF",
+  "Team Project": "https://cdn.simpleicons.org/git/FFFFFF",
+};
+
+const monochromeTagIcons = new Set([
+  "NextJS",
+  "Next.js",
+  "Next.js 16",
+  "Roblox Studio",
+  "Frontend Development",
+  "Game Logic",
+  "Team Project",
+]);
 
 export const ProjectsSection = () => {
   return (
@@ -92,8 +129,18 @@ export const ProjectsSection = () => {
                     {project.tags.map((tag) => (
                       <span
                         key={`${project.id}-${tag}`}
-                        className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                        className="inline-flex items-center gap-1.5 px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
                       >
+                        {tagIcons[tag] ? (
+                          <img
+                            src={tagIcons[tag]}
+                            alt={`${tag} logo`}
+                            className={`h-3.5 w-3.5 ${monochromeTagIcons.has(tag) ? "invert dark:invert-0" : ""}`}
+                            loading="lazy"
+                          />
+                        ) : (
+                          <span className="h-1.5 w-1.5 rounded-full bg-primary/70" />
+                        )}
                         {tag}
                       </span>
                     ))}

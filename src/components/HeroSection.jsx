@@ -12,8 +12,8 @@ export const HeroSection = () => {
                     <span></span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mx-auto opacity-0 animate-fade-in-delay-3">
-                    I am a third-year IT student studying software engineering. My goal is to grow into a full-stack developer, but I want to build a strong frontend foundation first. 
-                    I built this website as a space to share my skills, projects and experience.
+                    I’m Hieu Phan, a Software Engineering student focused on building real products with React, Next.js, TypeScript and React Native. 
+                    I create modern, user-focused web and mobile applications with strong attention to UI, performance and scalability.
                 </p>
                 <div className="opacity-0 animate-fade-in-delay-3 flex flex-col items-center gap-2">
             
@@ -28,7 +28,7 @@ export const HeroSection = () => {
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                     <a href="#projects" className="cosmic-button">
-                        view my work
+                        View Projects
                     </a>
                 
                 </div>

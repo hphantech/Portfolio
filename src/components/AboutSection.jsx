@@ -5,17 +5,17 @@ const highlights = [
   {
     icon: Code,
     title: "Frontend Development",
-    description: "Building websites and applications using HTML, CSS, JavaScript, and modern frameworks through school and project work.",
+    description: "Building modern interfaces using React, Next.js and TypeScript, with focus on performance, responsiveness and clean UI.",
   },
   {
   icon: User,
   title: "Team-Based Development",
-  description: "Experience working in development teams during software engineering projects, including planning, implementation, and feedback cycles.",
+  description: "Experience working in teams on real projects, collaborating on planning, implementation and iterating based on feedback.",
   },
   {
   icon: Briefcase,
   title: "Professional Experience",
-  description: "Gaining real-world software development experience through collaborations with companies and organizations.",
+  description: "Hands-on experience through internships and projects, building applications and working with real-world requirements.",
   },
 ];
 
@@ -30,20 +30,16 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* LEFT */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">IT student who enjoys building web applications</h3>
+            <h3 className="text-2xl font-semibold">I build web and mobile applications and turn ideas into real products</h3>
 
             <p className="text-muted-foreground">
-              I’m a third-year HBO-ICT student studying software engineering, with a strong interest in building websites and interactive applications. 
-              I enjoy working on projects where I can turn ideas into something visual and functional, 
-              whether that’s a web interface, a mobile app, or an interactive experience. Through my studies, 
-              I’ve worked on multiple software engineering “comaker” projects with external organizations. 
-              This includes building a mobile application for SquareAim and developing an interactive learning platform on 
-              Roblox for a primary school (Digitalis). These projects gave me hands-on experience working in teams, communicating with stakeholders, 
-              and iterating based on feedback.
+              I’m Hieu Phan, a Software Engineering student focused on building real-world applications. I work with modern technologies like React, Next.js, TypeScript and React Native to create fast, user-focused products.
             </p>
 
             
-
+            <p className="text-muted-foreground">
+              I enjoy turning ideas into working applications from designing interfaces to implementing features and connecting APIs. Through my projects and internship, I’ve gained experience working both independently and in teams, building solutions that are not just functional, but also scalable and well-structured.
+            </p>
             
             
 
@@ -55,7 +51,7 @@ export const AboutSection = () => {
                 href="/CV.pdf"
                 className="cosmic-button"
               >
-                Download CV
+                View Resume
               </a>
             </div>
           </div>

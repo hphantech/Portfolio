@@ -2,63 +2,50 @@ import { ArrowUp, Linkedin, Mail, MapPin } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="mt-12 border-t border-border bg-card">
-      <div className="container mx-auto px-4 py-5 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-        
-        {/* LEFT — Info */}
-        <div className="space-y-6">
-          
+    <footer className="mt-16 border-t border-border/80 bg-card/60 backdrop-blur-sm">
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+          <div className="text-left">
+            <p className="font-semibold text-foreground">Hieu Phan</p>
+            <p className="text-sm text-muted-foreground">Software Engineering Student</p>
+          </div>
 
-          <div className="space-y-4">
-            <div className="flex items-start space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
-                <Mail className="h-5 w-5 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-medium">Email</h4>
-                <a
-                  href="mailto:hphan.tech@gmail.com"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  hphan.tech@gmail.com
-                </a>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-sm">
+            <a
+              href="mailto:hphan.tech@gmail.com"
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Mail className="h-4 w-4" />
+              hphan.tech@gmail.com
+            </a>
+            <span className="inline-flex items-center gap-2 text-muted-foreground">
+              <MapPin className="h-4 w-4" />
+              Almere, Netherlands
+            </span>
+          </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
-                <MapPin className="h-5 w-5 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-medium">Location</h4>
-                <p className="text-muted-foreground">
-                  Almere, Netherlands
-                </p>
-              </div>
-            </div>
+          <div className="flex items-center gap-2">
+            <a
+              href="https://www.linkedin.com/in/hyutech/"
+              target="_blank"
+              rel="noreferrer"
+              className="p-2.5 rounded-full border border-border bg-secondary/70 hover:bg-secondary transition-colors"
+              aria-label="Open LinkedIn profile"
+            >
+              <Linkedin className="h-4 w-4 text-foreground" />
+            </a>
+            <a
+              href="#hero"
+              className="p-2.5 rounded-full border border-border bg-secondary/70 hover:bg-secondary transition-colors"
+              aria-label="Back to top"
+            >
+              <ArrowUp className="h-4 w-4 text-foreground" />
+            </a>
           </div>
         </div>
 
-        {/* CENTER — Socials */}
-        <div className="flex flex-col items-center space-y-4">
-          <h4 className="font-medium">Connect with me</h4>
-          <a
-            href="https://www.linkedin.com/in/hphantech"
-            target="_blank"
-            className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
-          >
-            <Linkedin className="text-primary" />
-          </a>
-        </div>
-
-        {/* RIGHT — Back to top */}
-        <div className="flex justify-end">
-          <a
-            href="#hero"
-            className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
-          >
-            <ArrowUp size={20} />
-          </a>
+        <div className="mt-6 pt-4 border-t border-border/60 text-xs text-muted-foreground text-center">
+          © {new Date().getFullYear()} Hieu Phan. All rights reserved.
         </div>
       </div>
     </footer>
