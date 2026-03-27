@@ -43,16 +43,10 @@ export const AboutSection = () => {
             
             
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-
-              
-              <a
-                target="_blank"
-                href="/CV.pdf"
-                className="cosmic-button"
-              >
-                View Resume
-              </a>
+            <div className="pt-4">
+              <p className="text-sm text-muted-foreground">
+                Resume available upon request.
+              </p>
             </div>
           </div>
 
